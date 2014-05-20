@@ -1,0 +1,19 @@
+#version 150
+
+in vec4 vColour;
+in vec2 vUV;
+
+out vec4 outColour;
+
+uniform sampler2D ElementTexture;
+uniform float Time;
+
+void main(){
+	outColour = texture (ElementTexture,vUV) * vColour;
+	if (outColour.a < 0.05f) { discard; }//remove alpha less than 0.05f
+	if (outColour.r >= 0.3f){
+		float s = sin(Time);
+		outColour.r += s * 0.25f;
+	}
+}
+

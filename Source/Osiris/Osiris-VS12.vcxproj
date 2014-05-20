@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\FileIO\SettingsXML.cpp" />
+    <ClCompile Include="Source\States\InfoBoxState.cpp" />
+    <ClCompile Include="Source\States\LoadedMenuState.cpp" />
+    <ClCompile Include="Source\States\GizmoTest.cpp" />
+    <ClCompile Include="Source\AI\NavMesh.cpp" />
+    <ClCompile Include="Source\States\Options.cpp" />
+    <ClCompile Include="Source\UI\Progressbar.cpp" />
+    <ClCompile Include="Source\UI\Console.cpp" />
+    <ClCompile Include="Source\UI\ElementList.cpp" />
+    <ClCompile Include="Include\TinyXML\tinystr.cpp" />
+    <ClCompile Include="Include\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="Include\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="Include\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="Source\FileIO\ChunkIO.cpp" />
+    <ClCompile Include="Source\Collision.cpp" />
+    <ClCompile Include="Source\UI\Graph.cpp" />
+    <ClCompile Include="Source\UI\Container.cpp" />
+    <ClCompile Include="Source\Logger.cpp" />
+    <ClCompile Include="Source\States\AIState.cpp" />
+    <ClCompile Include="Source\States\MainMenuState.cpp" />
+    <ClCompile Include="Source\UI\Slider.cpp" />
+    <ClCompile Include="Source\UI\Window.cpp" />
+    <ClCompile Include="Source\Movement.cpp" />
+    <ClCompile Include="Source\UI\BitFont.cpp" />
+    <ClCompile Include="Source\Buffers.cpp" />
+    <ClCompile Include="Source\UI\Button.cpp" />
+    <ClCompile Include="Source\Game.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\App.cpp" />
+    <ClCompile Include="Source\Models.cpp" />
+    <ClCompile Include="Source\ParticleSystem.cpp" />
+    <ClCompile Include="Source\Shader.cpp" />
+    <ClCompile Include="Source\SkyBox.cpp" />
+    <ClCompile Include="Source\Sprite.cpp" />
+    <ClCompile Include="Source\Textures.cpp" />
+    <ClCompile Include="Source\Time.cpp" />
+    <ClCompile Include="Source\StateManager.cpp" />
+    <ClCompile Include="Source\States\VoxelState.cpp" />
+    <ClCompile Include="Source\Voxels.cpp" />
+    <ClCompile Include="Source\UI\UIElement.cpp" />
+    <ClCompile Include="Source\UI\BitString.cpp" />
+    <ClCompile Include="Source\UI\Textbox.cpp" />
+    <ClCompile Include="Source\UI\UITexture.cpp" />
+    <ClCompile Include="Source\States\Splash.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\States\GizmoTest.hpp" />
+    <ClInclude Include="Headers\States\Options.hpp" />
+    <ClInclude Include="Headers\VertexBatch.hpp" />
+    <ClInclude Include="Headers\UI\Console.hpp" />
+    <ClInclude Include="Headers\UI\ElementList.hpp" />
+    <ClInclude Include="Headers\FileIO\ChunkIO.hpp" />
+    <ClInclude Include="Headers\States\AIState.hpp" />
+    <ClInclude Include="Headers\Collision.hpp" />
+    <ClInclude Include="Headers\UI\Graph.hpp" />
+    <ClInclude Include="Headers\UI\Container.hpp" />
+    <ClInclude Include="Headers\UI\Elements.hpp" />
+    <ClInclude Include="Headers\UI\Window.hpp" />
+    <ClInclude Include="Headers\UI\BitFont.hpp" />
+    <ClInclude Include="Headers\App.hpp" />
+    <ClInclude Include="Headers\Buffers.hpp" />
+    <ClInclude Include="Headers\UI\Button.hpp" />
+    <ClInclude Include="Headers\Game.hpp" />
+    <ClInclude Include="Headers\Models.hpp" />
+    <ClInclude Include="Headers\ParticleSystem.hpp" />
+    <ClInclude Include="Headers\Shader.hpp" />
+    <ClInclude Include="Headers\Skybox.hpp" />
+    <ClInclude Include="Headers\Sprite.hpp" />
+    <ClInclude Include="Headers\States\AllStates.hpp" />
+    <ClInclude Include="Headers\Textures.hpp" />
+    <ClInclude Include="Headers\Time.hpp" />
+    <ClInclude Include="Headers\VertexTypes.hpp" />
+    <ClInclude Include="Headers\Voxels.hpp" />
+    <ClInclude Include="Headers\States\State.hpp" />
+    <ClInclude Include="Headers\StateManager.hpp" />
+    <ClInclude Include="Headers\States\VoxelState.hpp" />
+    <ClInclude Include="Headers\Movement.hpp" />
+    <ClInclude Include="Headers\UI\Slider.hpp" />
+    <ClInclude Include="Headers\States\MainMenuState.hpp" />
+    <ClInclude Include="Headers\Logger.hpp" />
+    <ClInclude Include="Headers\AI\NavMesh.hpp" />
+    <ClInclude Include="Headers\UI\UIElement.hpp" />
+    <ClInclude Include="Headers\UI\BitString.hpp" />
+    <ClInclude Include="Headers\UI\Textbox.hpp" />
+    <ClInclude Include="Headers\UI\Progressbar.hpp" />
+    <ClInclude Include="Headers\UI\UITexture.hpp" />
+    <ClInclude Include="Headers\States\Splash.hpp" />
+    <ClInclude Include="Headers\States\InfoBoxState.hpp" />
+    <ClInclude Include="Headers\States\LoadedMenuState.hpp" />
+    <ClInclude Include="Headers\FileIO\SettingsXML.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{593B3162-1122-4D0B-BA9B-19FD8A56669B}</ProjectGuid>
+    <RootNamespace>OsirisVS12</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>bin\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <IncludePath>./Include;./Headers;$(IncludePath)</IncludePath>
+    <LibraryPath>./Libs;./Libs/vs2012;$(LibraryPath)</LibraryPath>
+    <SourcePath>./Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>bin\</IntDir>
+    <IncludePath>./Include;./Headers;$(IncludePath)</IncludePath>
+    <LibraryPath>./Libs;./Libs/vs2012;$(LibraryPath)</LibraryPath>
+    <SourcePath>./Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OGL__3_2;GLEW_STATIC;GLM_SWIZZLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;glew32s.lib;opengl32.lib;SOIL_d.lib;FBXLoader_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OGL__3_2;GLEW_STATIC;GLM_SWIZZLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3.lib;glew32s.lib;opengl32.lib;SOIL.lib;FBXLoader.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
